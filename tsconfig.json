@@ -1,0 +1,18 @@
+{
+	"extends": "./tsconfig.app.json",
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.js",
+		"src/**/*.jsx",
+		".eslintrc.js",
+		"eslint.config.js"
+	],
+	"compilerOptions": {
+		"outDir": "./dist",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	}
+}

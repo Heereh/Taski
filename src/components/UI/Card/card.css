@@ -1,0 +1,81 @@
+.card__container {
+	background: #2c2c38;
+	border-radius: 8px;
+	padding: 16px;
+	margin-bottom: 12px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition:
+		transform 0.2s,
+		box-shadow 0.2s;
+	position: relative;
+}
+
+.card__container:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.card--dragging {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transform: rotate(2deg);
+	opacity: 0.9;
+}
+
+.drag-handle {
+	cursor: grab;
+}
+.card__header--button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 12px;
+}
+
+.card__header__container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 12px 0 12px 0;
+}
+
+.card__container--title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+	line-height: normal;
+}
+
+.card__container--badge {
+	display: flex;
+	gap: 8px;
+	margin-top: 8px;
+}
+
+.card__footer {
+	color: var(--text-contrast);
+}
+
+.card__footer--container--descripcion {
+	font-size: 0.9rem;
+	line-height: 1.4;
+	margin-bottom: 16px;
+}
+
+.card__footer--date {
+	font-size: 0.8rem;
+	color: #94949f;
+}
+
+.line {
+	display: block;
+	height: 1px;
+	background: #363642;
+	margin: 8px 0;
+}

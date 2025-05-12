@@ -1,0 +1,17 @@
+main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 2rem;
+	overflow: hidden; /* Add this to prevent overflow */
+}
+
+.main__Content {
+	display: flex;
+	gap: 2rem;
+	height: calc(
+		100vh - 120px
+	); /* Adjust height to account for padding and button */
+	overflow-x: auto;
+}
+

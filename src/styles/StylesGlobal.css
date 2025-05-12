@@ -1,0 +1,77 @@
+:root {
+	/*! Colores */
+
+	--background-light: #faf9f6;
+	--background-dark: #121212;
+	--line-color: #3c3f43;
+	--cl-light: #f2f4fa;
+	--cl-green: #7cf7a4;
+	--cl-blue-light: #77d4fa;
+	--cl-aqua: #81fae5;
+	--cl-green-baby: #a9fa80;
+	--cl-blue: #7c97f9;
+
+	/* Variables */
+	--spacing: 0 1rem;
+
+	/* Fonts  */
+	--text-light: #3c3f43;
+	--text-dark: #f2f4fa;
+	--text-contrast:#94949F;
+
+	--font-primary: 'Yanone Kaffeesatz Variable', sans-serif;
+	--font-second: 'Montserrat Alternates', sans-serif;
+	--font-third: 'Maven Pro Variable', sans-serif;
+}
+* {
+	min-width: 0;
+	font: inherit;
+	box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+	box-sizing: border-box;
+}
+img,
+video,
+svg {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-third);
+	background-color: var(--background-light);
+	color: var(--text-light);
+	transition:
+		background-color 0.3s ease,
+		color 0.3 ease;
+}
+
+body.dark-mode {
+	background-color: var(--background-dark);
+	color: var(--text-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+	font-family: var(--font-primary);
+}
+
+p {
+	text-wrap: pretty;
+}
+a {
+	text-decoration: none;
+	color: var(--text-light);
+}
